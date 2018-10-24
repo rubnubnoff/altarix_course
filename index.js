@@ -40,7 +40,7 @@ function formatNumber(number) {
 	let	integerPartArr = [];
 	let	integerPartString = '';
 
-	while(integerPart > 1000 || integerPart < -1000) {
+	while(integerPart >= 1000 || integerPart <= -1000) {
 		if(integerPart > 0) {
 			integerPartArr.unshift((integerPart % 1000).toString());
 			integerPart = Math.floor(integerPart / 1000);
