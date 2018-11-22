@@ -1,0 +1,82 @@
+@import 'styles/variables'
+
+body
+    margin: 0
+    padding: 0
+#header 
+    height: 40px
+    padding-left: 20px
+    // border: 1px solid #54759e
+    // border-radius: 5px
+    box-shadow: 2px 1px 5px $basic-color
+    background-color: $basic-color
+    color: #ffffff
+    text-shadow: 1px 1px 2px #ffffff
+    font-size: 22px
+    line-height: 35px
+#content
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    height: 650px
+.userMessage, .myMessage
+    margin-bottom: 20px
+.userMessage
+    margin-left: 20px
+.myMessage
+    align-self: flex-end
+    margin-right: 20px
+.userMessage_avatar, .myMessage_avatar
+    float: left
+    max-width: 80px
+    margin-right: 20px
+    font-size: 14px
+    word-wrap: break-word
+    img
+        display: block
+        width: 40px
+        margin: 0 auto
+        border-radius: 20px
+.userMessage_avatar
+    float: left
+    margin-right: 20px    
+.myMessage_avatar
+    float: right
+.userMessage_text, .myMessage_text
+    width: 200px
+    padding: 5px
+    box-shadow: 1px 1px 5px gray
+    border-radius: 5px
+    word-wrap: break-word
+.userMessage_text
+    margin-left: 100px
+.myMessage_text
+    margin-right: 110px
+    background: $myMessage-color
+#footer 
+    margin-top: 10px
+    .send_form
+        display: flex
+        justify-content: space-around
+        .send_area
+            height: 100px
+            width: 85%
+            padding: 5px
+            resize: none
+            border: 1px solid $basic-color
+            box-shadow: 1px 1px 5px 1px $basic-color
+            border-radius: 10px
+        .send_area:focus
+            outline: none
+        .send_button
+            height: 70px
+            width: 70px
+            margin-left: 30px
+            margin-right: 30px
+            margin-top: 20px
+            border: none 
+            background: none
+            background-image: url('images/send_button.png')
+            background-position: center center
+            background-size: cover
+            cursor: pointer
