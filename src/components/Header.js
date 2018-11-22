@@ -3,7 +3,7 @@ import React from 'react';
 class Header extends React.Component{
     render(){
         return(
-            <header id={'header'}>Ivan Ivanov</header>
+            <header id={'header'}>{this.props.name}</header>
         );
     }
 }
